@@ -15,8 +15,8 @@
 ```bash
 git clone https://github.com/jihchi/parcel-reason-react-app.git
 cd parcel-reason-react-app
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 Then open http://localhost:1234/ in your browser.

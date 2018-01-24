@@ -8,10 +8,10 @@
     "url": "https://github.com/jihchi/parcel-reason-react-app.git"
   },
   "scripts": {
-    "build": "npm run build:bsb && parcel build src/index.html --public-url /",
+    "build": "yarn build:bsb && parcel build src/index.html --public-url /",
     "build:bsb": "bsb -make-world -clean-world",
-    "start": "concurrently --kill-others --names \"ReasonML,Parcel\" --prefix-colors \"red.bgBlack.bold,yellow.bgBlack.bold\" \"npm run watch:bsb\" \"npm run watch:parcel\"",
-    "watch:bsb": "npm run build:bsb -- -w",
+    "start": "concurrently --kill-others --names \"ReasonML,Parcel\" --prefix-colors \"red.bgBlack.bold,yellow.bgBlack.bold\" \"yarn watch:bsb\" \"yarn watch:parcel\"",
+    "watch:bsb": "yarn build:bsb -- -w",
     "watch:parcel": "parcel src/index.html"
   },
   "dependencies": {
