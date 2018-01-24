@@ -1,21 +1,25 @@
 {
   "name": "parcel-reason-react-app",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Parcel Bundler Example with Reason React",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jihchi/parcel-reason-react-app.git"
+  },
   "scripts": {
-    "start": "npm run watch & parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /",
-    "watch": "bsb -make-world -w",
-    "clean": "rimraf .cache lib dist"
+    "build": "npm run build:bsb && parcel build src/index.html --public-url /",
+    "build:bsb": "bsb -make-world -clean-world",
+    "start": "concurrently --kill-others --names \"ReasonML,Parcel\" --prefix-colors \"red.bgBlack.bold,yellow.bgBlack.bold\" \"npm run watch:bsb\" \"npm run watch:parcel\"",
+    "watch:bsb": "npm run build:bsb -- -w",
+    "watch:parcel": "parcel src/index.html"
   },
   "dependencies": {
     "reason-react": "^0.3.1"
   },
   "devDependencies": {
     "bs-platform": "^2.1.0",
-    "bsb-js": "^1.0.2",
-    "parcel-bundler": "^1.4.1",
-    "rimraf": "^2.6.2"
+    "concurrently": "^3.5.1",
+    "parcel-bundler": "^1.5.0"
   }
 }

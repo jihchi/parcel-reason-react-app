@@ -1,9 +1,9 @@
-# Parcel Reason React App
+# Parcel Reason React App (Use `bs-platform` directly)
 
-> A simple reason react app using parcel bundler
+> A simple [reason react](https://reasonml.github.io/reason-react/) app using [parcel bundler](https://parceljs.org/)
 
 <p align="center">
-  <a href="https://parcel-reason.now.sh/" target="_blank">
+  <a href="https://parcel-reason-react.now.sh/" target="_blank">
     <img src="./re.png"/>
     <br />
     Live Demo
@@ -13,7 +13,7 @@
 ## Getting Started
 
 ```bash
-git clone https://github.com/Raincal/parcel-reason-react-app.git
+git clone https://github.com/jihchi/parcel-reason-react-app.git
 cd parcel-reason-react-app
 npm install
 npm start
