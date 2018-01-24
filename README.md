@@ -24,7 +24,7 @@ Then open http://localhost:1234/ in your browser.
 ## Build for production
 
 ```bash
-npm run build
+yarn build
 ```
 
 ## Deployment
