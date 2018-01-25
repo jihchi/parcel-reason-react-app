@@ -11,7 +11,7 @@
     "build": "yarn build:bsb && parcel build src/index.html --public-url /",
     "build:bsb": "bsb -make-world -clean-world",
     "start": "concurrently --kill-others --names \"ReasonML,Parcel\" --prefix-colors \"red.bgBlack.bold,yellow.bgBlack.bold\" \"yarn watch:bsb\" \"yarn watch:parcel\"",
-    "watch:bsb": "yarn build:bsb -- -w",
+    "watch:bsb": "yarn build:bsb -w",
     "watch:parcel": "parcel src/index.html"
   },
   "dependencies": {
