@@ -11,6 +11,7 @@
     "build": "yarn build:bsb && parcel build src/index.html --public-url /",
     "build:bsb": "bsb -make-world -clean-world",
     "clean": "rm -rf src/*.js dist/ lib/ .cache/ .merlin",
+    "refmt": "find . -regex '.+\\.rei?' -exec refmt --in-place {} \\;",
     "start": "yarn build:bsb && concurrently --kill-others --names \"ReasonML,Parcel\" --prefix-colors \"red.bgBlack.bold,yellow.bgBlack.bold\" \"yarn watch:bsb\" \"yarn watch:parcel\"",
     "watch:bsb": "bsb -make-world -w",
     "watch:parcel": "parcel src/index.html"
