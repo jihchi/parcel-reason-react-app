@@ -13,12 +13,12 @@ let make = (~message, _children) => {
       <header className="App-header">
         <img src=logo className="App-logo" alt="logo" />
         <h1 className="App-title">
-          (ReasonReact.stringToElement(message))
+          (ReasonReact.string(message))
         </h1>
       </header>
       <p className="App-intro">
         (
-          ReasonReact.stringToElement(
+          ReasonReact.string(
             "To get started, edit src/App.re and save to reload.",
           )
         )
