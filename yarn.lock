@@ -983,9 +983,10 @@ browserslist@^4.0.0, browserslist@^4.1.0:
     electron-to-chromium "^1.3.82"
     node-releases "^1.0.1"
 
-bs-platform@^3.1.4:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-3.1.5.tgz#fb34ee4702bc9163848d5537096c4f31ebaeed40"
+bs-platform@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-4.0.7.tgz#1a0bbf0fef439fef5f1a88ba60d5ac8a6d73570c"
+  integrity sha512-39ZXSugB03PznE7eSVwxq5z4S8Cn44r22T2eFd7rgFQ94HaB/mCNHXG0epF3mJLYhhhyPT9w3e/t+FAIjSdAkg==
 
 buffer-equal@0.0.1:
   version "0.0.1"
@@ -4234,9 +4235,10 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
-reason-react@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.4.2.tgz#690d34e3e91a2585cdc5f58384b6c8ff653c32c1"
+reason-react@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/reason-react/-/reason-react-0.5.3.tgz#10601809742fd991109ec9d69ad4baf2c3f17540"
+  integrity sha512-dUkoqXrP/gOjkmkW+k/otEUP+yeXH5+QfdxNT5EW60MXM3zbCdFhbNzKBbjYOZ6x96UbxK869CObjX04BdJEDg==
   dependencies:
     react ">=15.0.0 || >=16.0.0"
     react-dom ">=15.0.0 || >=16.0.0"
