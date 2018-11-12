@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "bs-platform": "^3.1.4",
-    "concurrently": "^3.6.0",
-    "parcel-bundler": "^1.9.2"
+    "concurrently": "^4.0.1",
+    "parcel-bundler": "^1.10.3"
   }
 }
